@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Introduction to objects</title>
+        <script type="text/javascript">
+        /*
+            this is  normal object creation using method 
+
+        */
+        var Car= {//creation of object file 
+            car_brand :"Tesla ",
+            model:"T110X ",
+            price:35000,
+            teslaAutoPilot :function()//method creation inside object
+            {
+                document.write("<h2>This is a car run on autopilot mode</h2>");
+                
+            },
+            linespace : function()
+            {
+                document.write("<h2>===============*******=================</h2>");
+            }
+        }
+        
+        document.write("<h2>"+Car.car_brand+"</h2>");
+        document.write("<h2>"+Car.model,Car.model+"</h2>")
+        document.write("<h2>"+ Car.model +Car.price +"</h2>");
+        Car.teslaAutoPilot();
+        Car.linespace();
+
+        /*
+        now we are going to learn about object constructor
+        or we can say function consttructor
+
+        */
+        function Cars(car_brand1,model1,price1)
+        {
+            this.car_brand1=car_brand1;
+            this.model1=model1;
+            this.price1=price1;
+            this.teslaAutoPilot1 = function()
+            {
+                document.write("<h2>This is a car run on autopilot mode</h2>");
+                document.write("<h2>"+car_brand1, model1, price1+"</h2>");
+            }
+        }
+        var c1=new Cars("Tesla ","T110x ",350000);
+        var c2=new Cars("TATA ","Nexon ",90000);
+        c1.teslaAutoPilot1();
+        c2.teslaAutoPilot1();
+        Car.linespace();//this is for line end ..............
+
+        // it tells details about type..........
+        document.write(typeof(Cars));
+        document.write("<h2>"+typeof(Car.car_brand)+"</h2>");
+        document.write("<h2>"+typeof(Car.price)+"</h2>");
+        Car.linespace();//this is for line end ..............
+
+        /*
+        If i need to add one more property in under Cars...
+        so we can directlyy add it .......
+        */
+        Car.fuelType="Electric";
+        document.write("<h2>"+Car.fuelType+"</h2>"); 
+        //we can also delete properties from car method ...
+        delete Car.price;
+        document.write("<h2>"+Car.price+"</h2>"); 
+
+        //we an also achange the data type of variable 
+        Car.price="35000";
+        document.write("<h2>"+Car.price+"</h2>"); 
+        document.write("<h2>"+typeof(Car.price)+"</h2>"); 
+        Car.linespace();
+
+
+    
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Function</title>
+        <script type="text/javascript">
+        /*  
+            Write a program to add 2 numbers and print result.
+        */
+       function add2Number()
+       {
+           var a=5;
+           var b=9;
+           var total=a+b;
+           document.write("<h1>sum of two number :"+total+"</h1>");
+       }
+       //parameterized function ........
+       function add2Number1(a,b)
+       {
+           
+           var total=a+b;
+           document.write("<h1>sum of two number :"+total+"</h1>");
+       }
+       //returned function.....
+       function add2Number2(a,b)
+       {
+           
+           var total=a+b;
+           return total;
+           
+       }
+       
+       add2Number();//function call....
+       add2Number1(5,4);
+       add2Number1("mananjay ","roy");
+       output=add2Number2("Dhananjay ","Roy");//return function calling ...
+       document.write("<h1>sum of two number :"+output+"</h1>");
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

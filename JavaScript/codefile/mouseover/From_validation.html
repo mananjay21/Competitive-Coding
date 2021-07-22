@@ -1,0 +1,82 @@
+<html>
+    <heaad>
+        <title>Form Validation</title><title></title>
+        <script type="text/javascript">
+        function f1()
+        {
+            var username= document.getElementById("uname");
+            var password= document.getElementById("passw");
+
+            if(username.value.trim() =="" || password.value.trim() =="")
+            {
+                alert("no Blank value allowed");
+                
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+        
+        //for checking invalid user name with border color and also
+        // checking the length of password then ony it allows to sign in 
+
+        function f2()
+        {
+            var username2= document.getElementById("uname2");
+            var password2= document.getElementById("pass2");
+
+            if(username2.value.trim()=="")
+            {
+                alert("no Blank Username allowed");
+                username2.style.border="solid 3px red";
+                document.getElementById("lbluser").style.visibility="visible";
+                return false;
+            }
+            else if(password2.value.trim() =="")
+            {
+                alert("no Blank Passwprd allowed");
+                password2.style.border="solid 3px red";
+                document.getElementById("lbluser1").style.visibility="visible";
+                return false;
+            }
+            else if(password2.value.trim().length<5)
+            {
+                alert("Password iss too short");
+                return false;
+            }
+            else 
+            {
+                return true;
+            }
+
+        }
+        
+        
+        </script>
+    </heaad>
+    <body>
+        <h3>1st form</h3>
+        <form onclick="return f1()" action="Message.html">
+            <input type="text" id="uname" placeholder="Enter UserName"/><br><br>
+            <input type="password" id="Passw" placeholder="Enter Your Password"><br><br>
+            <button  type="submit">Sign in </button>
+
+        </form>
+        <h3>2nd form </h3>
+        <form onclick="return f2()" action="Message.html">
+            <input type="text" id="uname2" placeholder="Enter UserName"/>
+            <label id="lbluser" style="color:red; visibility:hidden">Invalid *</label>
+            <br><br>
+            
+            <input type="password" id="pass2" placeholder="Enter Your Password">
+            <label id="lbluser1" style="color:red; visibility:hidden">Invalid *</label>
+            <br><br>
+            <button  type="submit">Sign in </button>
+
+        </form>
+    </body>
+</html>
+

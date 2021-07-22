@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Dom manipulation</title>
+        <script type="text/javascript">
+        function buttonClick()
+        {
+            //callig a action to a button..........
+            document.getElementById("heading2").innerHTML="Mananjay ";
+            alert("button clicked");
+        }
+
+        function buttonclick1()
+        {
+            var str =document.getElementById("heading3").innerHTML="95% loyal";
+            alert(str);
+        }
+        //details for log in page 
+        function fn1()
+        {
+            var str = document.getElementById("text1").value;
+            var str1 = document.getElementById("text2").value;
+            if(str==str1)
+            alert(str+" Sucessfully log in ");
+            else
+            alert(str+" wrong username or password");
+        }
+        var Line= {
+            linespace : function()
+            {
+                document.write("<h2>===============*******=================</h2>")
+            }
+        }
+        //Line.linespace();
+
+        function fn2()
+        {
+            var radio1=document.getElementById("radio1");
+            var radio2=document.getElementById("radio2");
+            if(radio1.checked==true)
+                alert("The channel selected as "+radio1.value);
+            else if(radio2.checked==true)
+                alert("the channel selected as "+radio2.value);
+            else
+                alert("NO channel selected");
+        }
+
+        //for drop down box and whiscever is selected we need to take that value 
+
+        function fn3()
+        {
+            var select=document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value);
+        }
+        //for manupualating get element by Tag name
+
+        function fn4()
+        {
+            var para=document.getElementsByTagName("p");
+            para[0].style.fontSize=25;
+            para[1].style.color="green";
+            para[2].style.fontWeight="bold";
+            para[3].style.fontStyle="italic";
+
+            for(var i=4;i<para.length;i++)
+            {
+                para[i].style.color="red";
+            }
+
+        }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()">Click me </button>
+        <h2 id="heading2"> Some Text must be there</h2>
+
+        <button onclick="buttonclick1()"> sign up</button>
+        <h2 id="heading3"> Loyality test</h2>
+       
+        ====================*********====================<br>
+        
+
+            <b>User name</b><input  type="text" id="text1" placeholder="Enter yout name "></input>
+            <br><br>
+            <b>Password </b><input type= "password" id="text2" placeholder="Enter your password">
+            <br><br>
+            <b>Gender </b><br>
+            <input name="grp1" type ="radio" id="radio1" value="male" >Male</input> <br>
+            <input name="grp1" type ="radio" id="radio2"value="female" >Female</input><br><br>
+            
+            
+            <button onclick="fn2()" id="button3">check </button>
+            <button onclick="fn1()" id="button3">Sign in </button>
+            <br><br>
+            <select id="selectbox">
+                <option value="Mechanical">Mechanical</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Civil">Civil</option>
+                
+            </select>
+
+            <button onclick="fn3()" id= "button4">Select box</button>
+
+            <p>This is my paragraph 1</p>
+            <p>This is my paragraph 2</p>
+            <p>This is my paragraph 3</p>
+            <p>This is my paragraph 4</p>
+            <p>This is my paragraph 5</p>
+
+            <p>This is my paragraph 6</p>
+            <p>This is my paragraph 7</p>
+            <p>This is my paragraph 8</p>
+
+            <button onclick="fn4()" id= "button4">On Click</button>
+
+
+            
+        
+    </body>
+</html>

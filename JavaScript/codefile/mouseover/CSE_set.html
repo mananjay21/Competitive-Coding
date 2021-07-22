@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>CSE Validation</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var username=document.getElementById("uname").value;
+           //regx = new RegExp("[A00]CSE","i");
+            //var regx=/[A-X][0-9]CSE/i;
+            //var regx=/[^a][cse].gmail.com[1-9]roy/;// this can be use to check valid and invalid
+            //var regx=/[^a]abc/i;
+            //for validating mobile number ....
+            var regx = /[6-9]\d{10}/;
+            if(regx.test(username))
+            {
+                alert("Valid username ");
+                //window.location.href="success.html";
+                document.getElementById("lcheck").style.visibility="hidden";
+                
+            }
+            else
+            {
+                alert("Invalid username ");
+                document.getElementById("lcheck").style.visibility="visible";
+            }
+            
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="uname" placeholder="Enter your mobile number  ">
+            <label id="lcheck" style="color:red;visibility: hidden;">Invalid Userid</label><br><br>
+            <button type="button" onclick="validate()"> <b>submit</b></button>
+
+
+        </form>
+
+    </body>
+</html>
