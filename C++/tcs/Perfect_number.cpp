@@ -14,8 +14,7 @@ int main() {
 	        {
 	            count++;
 	            sum=sum+j;
-	            //cout<<j;
-	            //cout<<sum<<" ";
+	            
 	        }
 	    }
 	    //cout<<endl;
