@@ -4,6 +4,6 @@ int main()
 {
     cout<<"WElcome to pattern programming \n";
     int n;
-    Cout<<"print number of blocks in pattern \n";
+    cout<<"print number of blocks in pattern \n";
 return 0;
 }
