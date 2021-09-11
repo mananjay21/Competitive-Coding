@@ -6,4 +6,7 @@ int main()
     int n;
     cout<<"print number of blocks in pattern \n";
 return 0;
+
+
+
 }
