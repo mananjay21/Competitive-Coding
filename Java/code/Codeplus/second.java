@@ -8,7 +8,7 @@ public class second {
         int num3=4;
         short num4=10;
         System.out.println(num4);
-        boolean ma =true;
+        //boolean ma =true;
         int sum=num1+num2+num3;
         System.out.println(sum);
     }   
