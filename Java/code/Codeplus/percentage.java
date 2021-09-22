@@ -5,7 +5,7 @@ public class percentage {
     public static void main(String[] args) {
         //program for calculating percentage of subjects
         
-        Scanner sc= new Scanner(System.in);
+        /*Scanner sc= new Scanner(System.in);
         System.out.println("Enter number of subject ");
         int n= sc.nextInt();
         //int arr[n];
@@ -17,7 +17,10 @@ public class percentage {
 
 
         }
-        System.out.println((p/n)+"%");
+        System.out.println((p/n)+"%");*/
+        String a= "manna";
+        System.out.println(a);
+        
     }
     
 }
