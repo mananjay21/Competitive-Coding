@@ -1,3 +1,4 @@
+
 public class grade {
     public static void main(String[] args) {
         char grade ='b';
@@ -7,7 +8,9 @@ public class grade {
         //decryption..
         grade=(char)(grade-8);
         System.out.println(grade);
-}
+        
+    
+    }
 
     
 }
