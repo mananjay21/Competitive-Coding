@@ -20,7 +20,8 @@ public class stringLength {
         System.out.println(low1);
         System.out.println(high1);
         System.out.println(trm);
-        System.out.println(name1.substring(2));
+        System.out.println(name1.substring(1,9));
+        System.out.println(name1.replace('a', 'x'));
 
 
     }
