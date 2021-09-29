@@ -5,10 +5,12 @@ class Main {
     System.out.println("Welcome to programming world!!");
     Scanner sc = new Scanner(System.in);
     Scanner ss = new Scanner(System.in);
+    Scanner sa = new Scanner(System.in);
     
     System.out.println("Press 1 for Converting String to lower case");
     System.out.println("Press 2 for Converting String to Uppercase");
     System.out.println("Press 3 to change spce to underscore");
+    System.out.println("Press 4 to check wether multiple number of underscore are present or not");
     //System.out.println("Press 99 to exit");
     
         int n = sc.nextInt();
@@ -37,10 +39,12 @@ class Main {
         	System.out.println("Text after operation:\t"+name3.replaceAll(" ","_"));
             break;
         case 4:
-            System.out.println("to check wether multiple number of underscore are present or not");
-            String name4=ss.next();
-            	System.out.println("Normal text before operation:\t "+name4);
-        	System.out.println("State after operation:\t"+);
+            System.out.println("To check wether multiple number of underscore are present or not");
+            String name4=sa.nextLine();
+            System.out.println("Normal text before operation:\t "+name4);
+        	System.out.println("State after operation:\t"+name4.indexOf("  "));
+        	System.out.println("State after operation:\t"+name4.indexOf("   "));
+        	
             
             break;
             
