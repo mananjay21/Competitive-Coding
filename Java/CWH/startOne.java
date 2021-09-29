@@ -4,6 +4,7 @@ class Main {
     
     System.out.println("Welcome to programming world!!");
     Scanner sc = new Scanner(System.in);
+    Scanner ss = new Scanner(System.in);
     
     System.out.println("Press 1 for Converting String to lower case");
     System.out.println("Press 2 for Converting String to Uppercase");
@@ -31,8 +32,16 @@ class Main {
         break;
         case 3:
             System.out.println("welcome to string conversion from \"space\" to \"underscore\" \nEnter your value");
-        	String name3 = sc.nextLine();
-        	System.out.println("replaced value="+name3.replaceAll(" ","_"));
+        	String name3 = ss.nextLine();
+        	System.out.println("Normal text before operation:\t "+name3);
+        	System.out.println("Text after operation:\t"+name3.replaceAll(" ","_"));
+            break;
+        case 4:
+            System.out.println("to check wether multiple number of underscore are present or not");
+            String name4=ss.next();
+            	System.out.println("Normal text before operation:\t "+name4);
+        	System.out.println("State after operation:\t"+);
+            
             break;
             
         default:
