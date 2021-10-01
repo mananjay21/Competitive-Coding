@@ -1,9 +1,9 @@
 import java.util.*;
-class practiceset2_4
+class practiceset2_6
 {
 	public static void main(String [] args)
 	{
-		System.out.println("Practice problem number 2_4");
+		System.out.println("Practice problem number 2_6");
 		System.out.println("A Program to find maximum element in array ");
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the size of array");
@@ -20,14 +20,19 @@ class practiceset2_4
 			System.out.println(arr[i]);
 		}
 		*/
-		int max=0;
-		max=arr[0];
-		for(int i=0;i<arr.length;i++)
+		int c=0;
+		
+		for(int i=0;i<arr.length-1;i++)
 		{
-			if(arr[i]>max)
-			max=arr[i];
+			if(arr[i]<arr[i+1])
+			c++;
 		}
-		System.out.println("Maximum value \t"+max);
+		if(c==0)
+		System.out.println("Array is sorted ");
+		else
+		{
+			System.out.println("Array is not sorted ");
+		}
 		
 	}
 }
