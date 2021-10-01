@@ -21,7 +21,7 @@ class PracticeSet_8
 			System.out.println(a[i]);
 		}
 		System.out.println("for Each loop");
-		for(int elem:a)
+		for(int elem	:a)
 		{
 			System.out.println(elem);
 		}
