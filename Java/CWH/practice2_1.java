@@ -3,7 +3,7 @@ class practice2_1
 {
 		public static void main(String[] args)
 	{
-		//System.out.println("Practice problem number 2_1");
+		System.out.println("Practice problem number 2_1");
 		System.out.println("Addition of float number ");
 		Scanner sc= new Scanner(System.in);
 		int n=5;
