@@ -3,14 +3,14 @@ class practiceset_3_1
 {
 	static int fact(int n)
 	{
-		int fact;
+		int facto;
 		if(n==0|| n==1)
-		return 0;
+		return 1;
 		else
 		{
-			fact=fact*fact(n-1);
+			return n*fact(n-1);
 		}
-		return fact;
+		
 	}
 	public static void main(String[] args)
 	{
