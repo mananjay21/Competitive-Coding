@@ -1,12 +1,12 @@
 import java.util.Scanner;
 class practiceSet3_4
 {
-	static int avg(double a,double b)
+	static void avg(double a,double b)
 	{
 	
 	double m =(a+b)/2f;	
 	System.out.println(m);
-	return m;
+	//return m;
 	}
 	public static void main(String[] args)
 	{
