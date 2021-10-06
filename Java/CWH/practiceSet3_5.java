@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class practiceSet3_5
 {
-	static void Pattern(int n)
+	public static void Pattern(int n)
 	{
 		while(n>0)
 		{
