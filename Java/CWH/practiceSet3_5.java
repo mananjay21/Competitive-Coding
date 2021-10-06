@@ -1,24 +1,27 @@
 import java.util.Scanner;
 class practiceSet3_5
 {
-	public static void Pattern(int n)
+	public static int Pattern(int n)
 	{
-		while(n>0)
+		if(n<0)
+		{
+			return "*";
+		}
+		else
 		{
 			for(int i=0;i<n;i++)
 			{
-				System.out.print("  * ");
+				return ("  * "+Pattern(n-1));
 			}
 	}
-	
-	public static void main(String[] args)
+	public static void main(Strings args[])
 	{
 		Scanner Sc= new Scanner(System.in);
 		System.out.println("Welcome to recursion programming");
 		System.out.println("Pattern printing using recursion");
 		Ssytem.out.println("Enter number of rows in Pattern ");
 		int n= sc.nextInt();
-		Pattern(n);
+		System.out.println(Pattern(n));
 		
 	}
 
