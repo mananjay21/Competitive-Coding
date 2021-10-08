@@ -30,14 +30,17 @@ class rotateVal
 		while(k>0)
 		{
 			int temp=0;
-			for(int i=0;i<arr.size;i++)
+			for(int i=0;i<n;i++)
 			{
 			temp=arr[i];
-			arr[i]=arr[arr.size];
-			arr[arr.size]=temp;
+			arr[i]=arr[n-1];
+			arr[n-1]=temp;
 				
 			}
+			k--;
 		}
+		
+	System.out.println(Arrays.toString(arr));
 		
 		
 	
