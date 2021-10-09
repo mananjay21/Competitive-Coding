@@ -13,11 +13,13 @@ class samenumber
 		int m=a;
 		for(int i=a;i<=b;i++)
 		{
-			while(a>0)
+			for(int j=0;i<
+			
+			)
 			{
 				int c=m%10;
 				m=m/10;
-				//if(c==
+				
 			}
 			
 		}
