@@ -26,7 +26,7 @@ class practiceSet3_6
 	public static void main(String args[])
 	{
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Welcome to recursion programming");
+		System.out.println("Welcome to recursion programming ");
 		System.out.println("Pattern printing using recursion");
 		System.out.println("Enter number of rows in Pattern ");
 		int n= sc.nextInt();
