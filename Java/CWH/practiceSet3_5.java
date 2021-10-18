@@ -20,8 +20,7 @@ class practiceSet3_5
 		System.out.println("Welcome to recursion programming");
 		System.out.println("Pattern printing using recursion");
 		Ssytem.out.println("Enter number of rows in Pattern ");
-		int n= sc.nextInt();
-		
+		int n= sc.nextInt();		
 		System.out.println(Pattern(n));
 		
 	}
