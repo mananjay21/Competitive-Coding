@@ -11,6 +11,7 @@ class samenumber
 		int b= sc.nextInt();
 		//calculate same number occurance....
 		int m=a;
+		
 		for(int i=a;i<=b;i++)
 		{
 			for(int j=0;i<
