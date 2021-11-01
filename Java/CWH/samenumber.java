@@ -9,6 +9,7 @@ class samenumber
 		int a= sc.nextInt();
 		System.out.println("Enter the second number ");
 		int b= sc.nextInt();
+		
 		//calculate same number occurance....
 		int m=a;
 		
